@@ -1,6 +1,6 @@
 from django.urls import path
-from core.views.room_classifier_views import RoomClassifierView
+from core.views.img_analyser_views import ImgAnalyserView
 
 urlpatterns = [
-    path('classify-room/', RoomClassifierView.as_view(), name='classify-room')
+    path('base_img_analyse/', ImgAnalyserView.as_view(), name='img_analyser')
 ]
