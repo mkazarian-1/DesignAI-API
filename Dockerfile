@@ -20,4 +20,4 @@ COPY . .
 # Expose port for Gunicorn
 EXPOSE 8000
 
-CMD ["uvicorn", "DesignAI.asgiaws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/v2q6v1m6:application", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+CMD ["uvicorn", "DesignAI.asgi:application", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
