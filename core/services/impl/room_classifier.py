@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 class RoomClassifier(Predictor):
     MODEL_PATH = os.path.join(settings.ML_MODELS_DIR, 'room_classifier_final_model.pth')
-    class_names = ['Bathroom', 'Bedroom', 'Dinning', 'Kitchen', 'Living Room']
+    class_names = ['Bathroom', 'Bedroom', 'Dining Room', 'Kitchen', 'Living Room']
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     # Singleton pattern variables

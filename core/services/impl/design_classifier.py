@@ -16,7 +16,7 @@ class DesignClassifier(Predictor):
     MODEL_PATH = os.path.join(settings.ML_MODELS_DIR, 'design_classifier_final_model.pth')
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     class_names = ['Asian', 'Contemporary', 'Craftsman', 'Eclectic', 'Farmhouse',
-                   'Industrial', 'Mediterranean', 'Mid-century-modern', 'Modern',
+                   'Industrial', 'Mediterranean', 'Mid-Century', 'Modern',
                    'Rustic', 'Scandinavian', 'Traditional']
 
     # Singleton pattern variables
